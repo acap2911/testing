@@ -5,7 +5,7 @@
 
 .main{
     width: 240vh;
-    background: url(9.JPG);
+    background: 1px #fff;
     background-size: cover;
     height: 170vh;
     transform: scale(1.0);
@@ -164,7 +164,7 @@ ul li a:hover{
 
 .mainfablab{
     width: 240vh;
-    background: url(9.jpg);
+    background: 1px #fff;
     background-size: cover;
     transform: scale(1.0);
     margin-top:inherit;
