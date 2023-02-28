@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+   <title>Webpage Design</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainfablab">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">WELCOME</h2>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+                    
+                    <div class="dropdown">
+                    <li><a href="+">Weekly Projects</a>
+                    <div class="morestuff">
+                     <ul>
+                         <li><a href="FabLabSafety.html">Week 1</a></li>
+						 <li><a href="WebDevelopment.html">Week 2 & 3</a></li>
+                         <li><a href="ComputerAidedDesign.html">Week 4</a></li>
+                         <li><a href="3DPrinting.html">Week 5</a></li>
+                         <li><a href="3D Printing.html">Week 6</a></li>
+                         <li><a href="Computer Controlled Cutting.html">Week 7</a></li>
+						 <li><a href="LCQnPD.html">Week 8</a></li>
+						 <li><a href="Laser Cutting Assignment.html">Week 9 to 11</a></li>
+						 <li><a href="EEP.html">Week 12</a></li>
+						 <li><a href="Basic Output Devices.html">Week 13</a></li>
+						 <li><a href="Basic Input Devices.html">Week 14</a></li>
+                     </ul>
+                    </div>
+                    </li>
+                    </div>
+                    
+                    <li><a href="ModuleProject.html">Module Project</a></li>
+                </ul>
+            </div>
+            
+        </div>
+		<div class="content">
+            <h2>Basic Input Devices</h2>
+			<h4>Sensor</h4>
+			<p class="par">Are input devices</p>
+			<p class="par">- Measure some physical quantity (touch, light, heat etc)</p>
+			<p class="par">- Changes are slow (compared to computational power)</p>
+			<p class="par">- Most readings are analog by nature</p>
+			<p class="par">- Requires conversion to digital for processing </p>
+			<p class="par">Methods of reading sensors</p>
+			<p class="par">- Data is always available (e.g. temperature)</p>
+			<p class="par">- Polling to check whether data is available from sensor</p>
+			<p class="par">- Triggering – sensor will send a signal indicating data</p>
+			
+			<h4>Infra Red Remote Control</h4>
+			<p class="par">A technology that uses infrared signals to control devices from a distance is called an infrared remote control. It consists of a receiver on the device being controlled and a handheld remote. An infrared receiver module can convert analog signals into digital ones for Arduino use. Infrared signal reception and decoding can be made easier with libraries. Home entertainment systems frequently use infrared remote controls.</p>
+			
+			<h4>IRRemote Example</h4>
+			<p class="par">Uno IRRemote Control</p>
+			<p class="par">Use Serial Monitor to determine the hex codes before writing the application for the IR Remote</p>
+			<p class="par">Example:</p>
+			<p class="par">- Key 1 = 0xFD08F7 </p>
+			<p class="par">- Key 2 = 0xFD8877 </p>
+			<p class="par">Use a switch-case to effect the applications to be done</p>
+			
+			<h4>Measuring Distance</h4>
+			<p class="par">Ultrasonic Sensor HC-SR04</p>
+			<p class="par">Measures distances between 2cm to 400cm without contact using sound (ultrasonic) </p>
+			<p class="par">Requires a trigger and an input (2 digital pins) </p>
+			
+			<h4>PIR Motion Sensor HC-SR501</h4>
+			<p class="par">Passive Infra Red</p>
+			<p class="par">Detects motions</p>
+			<p class="par">- Adjust Sensitivity</p>
+			<p class="par">- Wait at least 15 seconds</p>
+			<p class="par">No Library required, 1 digital I/O input pin for status.</p>
+			<p class="par">Check pin</p>
+			<p class="par">- LOW no motion</p>
+			<p class="par">- HIGH motion detected</p>
+			<p class="par">Cannot measure distance</p>
+			
+			<h4>Room Temperature & Humidity</h4>
+			<p class="par">DHT-11 Temperature and Humidity sensor</p>
+			<p class="par">20~80% humidity, 0~50oC 1 Hz sampling rate.</p>
+			<p class="par">Requires 1 digital I/O pin</p>
+			<p class="par">Better results, accuracy with the DHT-22, however, 2~3x more expensive</p>
+			
+			<h4>Higher Temperature: DS18B20</h4>
+			<p class="par">Specifications:</p>
+			<p class="par">- Temperature range: -55oC ~ 125oC, Accuracy: +/-0.5oC </p>
+			<p class="par">Communication: 1Wire</p>
+			<p class="par">Sampling: 750mS at 12bit</p>
+			<p class="par">Uses: temperature sensing in hard environments, liquids away from processing unit</p>
+			
+			<h4>Real Time Clock Modules</h4>
+			<p class="par">Uno has no RTC to keep track of time as it use RTCLib</p>
+			<p class="par">Use independent RTC Modules</p>
+			<p class="par">- DS1307: Has a 32KHz crystal oscillator (slightly off); Has provision for DS18B20 connection; Has battery backup </p>
+			<p class="par">- DS3231: Uses I2C communications; Uses temperature controlled oscillator; Has battery backup </p>
+			
+			<h4>Loading The Library</h4>
+			<p class="par">3 ways of loading the library</p>
+			<p class="par">- Use the Arduino Library Management system</p>
+			<p class="par">- Download the compressed library (.zip) and use the IDE to load the library</p>
+			<p class="par">- Download the compressed library (.zip), extract the .h and .cpp files, manually copy them into the correct folders, restart the IDE.</p>
+			
+			<h4>Manually Installed Library</h4>
+			<p class="par">Manual method of installing a library</p>
+			<p class="par">- Manually download the compressed library (.zip)</p>
+			<p class="par">- Extract the files (usually a folder is created)</p>
+			<p class="par">- Check that the .h and .cpp files are present</p>
+			<p class="par">- Copy the folder to either</p>
+			<p class="par">• Arduino System Library Folder</p>
+			<p class="par">• User library folder</p>
+			<p class="par">- Restart the IDE</p>
+			<p class="par">- Include the header file (system/local) in the appropriate manner.</p>
